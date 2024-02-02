@@ -1,0 +1,19 @@
+def fibonacci(n):
+    
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+  
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+# Приклад використання:
+# Обчислюємо F(2), F(3), F(4)
+result_2 = fibonacci(2)
+result_3 = fibonacci(3)
+result_4 = fibonacci(4)
+
+print("F(2):", result_2)
+print("F(3):", result_3)
+print("F(4):", result_4)
