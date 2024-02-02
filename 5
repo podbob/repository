@@ -1,0 +1,19 @@
+def my_pow(x, n):
+    
+    if n == 0:
+        return 1.0
+  
+    elif n < 0:
+        return 1.0 / (x * my_pow(x, -n - 1))
+    
+    else:
+        return x * my_pow(x, n - 1)
+
+# Приклад використання:
+result_1 = my_pow(2.00000, 10)
+result_2 = my_pow(2.10000, 3)
+result_3 = my_pow(2.00000, -2)
+
+print("Result 1:", result_1)
+print("Result 2:", result_2)
+print("Result 3:", result_3)
