@@ -1,0 +1,13 @@
+def climb_stairs(n):
+    
+    if n == 0 or n == 1:
+        return 1
+   
+    return climb_stairs(n - 1) + climb_stairs(n - 2)
+
+# Приклад використання:
+result_2 = climb_stairs(2)
+result_3 = climb_stairs(3)
+
+print("Ways to climb stairs with 2 steps:", result_2)
+print("Ways to climb stairs with 3 steps:", result_3)
